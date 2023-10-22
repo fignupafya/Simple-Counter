@@ -46,11 +46,13 @@ def create_counter_app():
     button_frame = ttk.Frame(root)
     button_frame.pack(pady=10)
 
-    increment_button = ttk.Button(button_frame, text="+", command=increment_counter, width=10, cursor="hand2")
-    increment_button.pack(side=tk.LEFT, padx=10)
 
     decrement_button = ttk.Button(button_frame, text="-", command=decrement_counter, width=10, cursor="hand2")
     decrement_button.pack(side=tk.LEFT, padx=10)
+
+    increment_button = ttk.Button(button_frame, text="+", command=increment_counter, width=10, cursor="hand2")
+    increment_button.pack(side=tk.LEFT, padx=10)
+
 
     entry_frame = ttk.Frame(root)
     entry_frame.pack(pady=10)
